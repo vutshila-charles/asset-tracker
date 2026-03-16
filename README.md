@@ -184,6 +184,56 @@ Fetch Asset with Latest Inspections
 GET /api/assets/{id}
 ```
 
+Version 1 of the API
+
+This is the same endpoitns as above but this requires aauthentication.
+
+Request
+```
+GET /api/v1/assets/{id}
+```
+
+Response
+
+```
+{
+  "data": {
+    "id": 1,
+    "name": "Generator A",
+    "serial_number": "GEN-001",
+    "status": "active",
+    "inspections": [
+      {
+        "id": 1,
+        "inspector_name": "John Doe",
+        "passed": true,
+        "notes": "Good condition"
+      },
+      {
+        "id": 2,
+        "inspector_name": "Jane Doe",
+        "passed": false,
+        "notes": "Needs repair"
+      },
+      {
+        "id": 3,
+        "inspector_name": "John Doe",
+        "passed": true,
+        "notes": "Good condition"
+      }
+    ]
+  }
+}
+```
+
+Request
+
+```
+POST /api/v1/assests
+```
+
+
+
 Returns the asset and its **latest 3 inspections**.
 
 ---

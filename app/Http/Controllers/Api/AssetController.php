@@ -15,7 +15,7 @@ class AssetController extends Controller
      */
     public function index()
     {
-        //
+        return AssetResource::collection(Asset::all());
     }
 
     /**
