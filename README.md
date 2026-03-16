@@ -36,7 +36,11 @@ PHPUnit
 Clone the repository
 
 ```
-cd asset-inspection-api
+git clone https://github.com/vutshila-charles/asset-tracker.git
+```
+
+```
+cd asset-tracker
 ```
 
 Install dependencies
@@ -100,7 +104,7 @@ http://localhost:8000/api
 Interactive API docs
 
 ```
-http://localhost:8000/docs
+http://localhost:8000/
 ```
 
 ---
